@@ -1,2 +1,2 @@
-# contacts-management
+# contact-management
 react js app
