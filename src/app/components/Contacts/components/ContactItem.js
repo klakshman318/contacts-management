@@ -25,12 +25,12 @@ const ContactItem = ({contact, handleOnPressContact}) => {
         <Fragment>
             <ListGroup.Item className={`${darkMode ? 'dark-mode-content' : 'light-mode-content'} urlPointer`} onClick={() => handleOnPressContact({contact})}>
                 <Row>
-                    <Col sm={3} md={3}>
+                    <Col sm={3} md={2}>
                         <div style={{textAlign:'center'}}>
                             <Image src={getContactPicture(picture)} roundedCircle />
                         </div>
                     </Col>
-                    <Col sm={9} md={9}>
+                    <Col sm={9} md={10}>
                         <div className='contactName'>{name ? `${name.first} ${name.last}` : ''}</div>
                         <div>{phone ? phone : ''}</div>
                         <div>{email ? email : ''}</div>
