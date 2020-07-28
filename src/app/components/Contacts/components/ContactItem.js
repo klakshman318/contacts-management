@@ -27,7 +27,7 @@ const ContactItem = ({contact, handleOnPressContact}) => {
                 <Row>
                     <Col sm={3} md={2}>
                         <div style={{textAlign:'center'}}>
-                            <Image src={getContactPicture(picture)} roundedCircle />
+                            <Image src={getContactPicture(picture)} roundedCircle  />
                         </div>
                     </Col>
                     <Col sm={9} md={10}>
