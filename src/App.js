@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense, lazy} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+import {AppLoading} from './app/utils';
+
+import {APIContextProvider} from './APIContext';
+import {useThemeContext} from './ThemeProvider';
+
+const Contacts = lazy(() => import('./app/components/Contacts'));
 
 function App() {
+
+  const {darkMode} = useThemeContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+      <Router>
+        <Suspense fallback={<AppLoading />}>
+          <APIContextProvider>
+            <Route path='/' exact component={Contacts} />
+          </APIContextProvider>
+        </Suspense>
+      </Router>
     </div>
   );
 }

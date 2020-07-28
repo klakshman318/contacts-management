@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Contacts Mgt",
+  "name": "Contacts Mgt",
   "icons": [
     {
       "src": "favicon.ico",

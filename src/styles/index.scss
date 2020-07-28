@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$fontFamily: 'Ubuntu', sans-serif;
+// $fontFamily: 'Open Sans', sans-serif;
+
+$body-bg: #eee;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+body {
+    font-family: $fontFamily;
+}
+
+.urlPointer {
+    cursor: pointer;
+}
+
+.switchTitleLight {
+  color:#333;
+}
+.switchTitleDark {
+  color:#8c8c8ce6;
+}
+
+.light-mode {
+    background-color:$body-bg;
+    color: #333;
+    transition: background-color 0.25s ease-out;
+}
+
+.dark-mode {
+    background-color: #1a1919;
+    color: #999;
+    transition: background-color 0.25s ease-out;
+}
+
+.light-mode-header {
+    background-color:#fff;
+    color: #333;
+    transition: background-color 0.25s ease-out;
+}
+
+.dark-mode-header {
+    background-color:#2d2d2d;
+    color: #333;
+    transition: background-color 0.25s ease-out;
+}
+
+.light-mode-content {
+    background-color:#fff;
+    transition: background-color 0.25s ease-out;
+}
+
+.dark-mode-content {
+    background-color:#2d2d2d;
+    transition: background-color 0.25s ease-out;
+}
+
+span.title, .contactName {
+  font-family: $fontFamily;
+  font-weight: 700;
+}
+
+div.headerTitle {
+  font-family: $fontFamily;
+  font-weight: 400;
+  font-size:30px;
+}
+
+// .toggle {
+//     position: relative;
+//     padding: 0 4px;
+//     display: flex;
+//     align-items: center;
+//   }
+  
+//   input[type="checkbox"].checkbox {
+//     width: 40px;
+//     height: 10px;
+//     background: #555;
+//     position: relative;
+//     border-radius: 5px;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     cursor: pointer;
+//     vertical-align: 2px;
+//     outline: none;
+//   }
+  
+//   input[type="checkbox"].checkbox:checked + label {
+//     left: 30px;
+//   }
+  
+//   input[type="checkbox"].checkbox:focus-visible {
+//     outline: solid 2px white;
+//   }
+  
+//   input[type="checkbox"].checkbox + label {
+//     display: inline-block;
+//     width: 18px;
+//     height: 18px;
+//     border-radius: 50%;
+//     transition: all 0.3s ease;
+//     cursor: pointer;
+//     position: absolute;
+//     left: 2px;
+//     background: #fff;
+//     opacity: 0.9;
+//     background-color: cyan;
+//   }
+  
+//   .toggle-container {
+//     display: flex;
+//     margin: 0 auto;
+//   }
+  
+//   .toggle-container > span {
+//     font-size: 1.2em;
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     transition: color 0.3s ease;
+//     margin-top: 4px;
+//     margin-right: 2px;
+//   }
+  
+//   .toggle-container > span:last-child {
+//     margin-top: 5px;
+//   }
+  
