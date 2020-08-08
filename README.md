@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://youthful-tereshkova-f8e541.netlify.app
+
 <img src="https://i.imgur.com/JVXPjwV.gif" />
 
 ## Available Scripts
