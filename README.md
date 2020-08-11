@@ -1,4 +1,4 @@
-## React Contact Management 
+## Contact Management - ReactJS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
